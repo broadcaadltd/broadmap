@@ -68,9 +68,9 @@ javascript
   quantumRouting={Platform.OS === 'ios'}>  
   <RoutePreview style={{height: '100%'}}/>  
 </BroadmapARView>  
-```
+ ```
 
-🌟 Advanced Usage
+## 🌟 Advanced Usage
 Quantum Routing
 ```bash
 # AWS Braket integration  
@@ -82,10 +82,10 @@ route = dw.solve(
     deadline="10min"  
 )  
 ```
-AR Navigation
+## AR Navigation
 
 ```bash
-# HoloLens 2 development  
+## HoloLens 2 development  
 broadmap deploy --ar hololens --scene underground  
 
 # Voice-controlled exploration  
@@ -123,13 +123,13 @@ Quantum error correction models
 
 Privacy-preserving ML techniques
 
-📜 Code of Conduct
+## 📜 Code of Conduct
 Contributor Covenant
 
-📄 License
+## 📄 License
 Apache 2.0 - See LICENSE
 
-📚 Research Basis
+## 📚 Research Basis
 Quantum Graph Neural Networks
 
 Photonic Backpropagation
@@ -140,7 +140,6 @@ Crafted with ⌚ quantum fluctuations and ❤️ from 37.7749° N, 122.4194° W
 
 "The map is not the territory, unless it's Broadmap++" - Korzybski v2.3.7 (AI Ethics Module)
 
-Copy
 
 ## This single-file README contains:  
 1. **Progressive Disclosure** - From basic setup to quantum development  
