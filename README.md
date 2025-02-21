@@ -26,23 +26,24 @@
 - Docker + NVIDIA Container Toolkit  
 - iOS/Android: Xcode 15+/Android Studio Giraffe  
 - Quantum Sim: Qiskit/D-Wave Leap (optional)  
-
-```bash  
+ 
 # Minimal install (classical mode)  
 pip install broadmap-core  
 
 # Full quantum-ar experience  
+```bash 
 git clone https://github.com/broadmap++/main  
 cd broadmap++ && ./install.sh --with-quantum --with-ar  
+```
+
 
 # Developer setup (Dockerized)  
 docker-compose -f quantum-dev.yml up  
 
 🧭 Basic Usage
+```bash
 python
-Copy
 from broadmap import QuantumMap, TimeViewer  
-
 # Initialize with hybrid engine  
 m = QuantumMap(mode="quantum-classical",  
                privacy="zk-snarks")  
@@ -57,22 +58,21 @@ route = m.route(
 # View 1849 Gold Rush trails  
 with TimeViewer(m, year=1849):  
     m.show_layer("historical")  
-
-    React Native Example:
+```
+## React Native Example:
 
 javascript
-Copy
+```bash
 <BroadmapARView  
   moodDetection={true}  
   quantumRouting={Platform.OS === 'ios'}>  
   <RoutePreview style={{height: '100%'}}/>  
 </BroadmapARView>  
-
+```
 
 🌟 Advanced Usage
 Quantum Routing
-python
-Copy
+```bash
 # AWS Braket integration  
 from broadmap.quantum import DWaveOptimizer  
 
@@ -81,14 +81,16 @@ route = dw.solve(
     constraints=["co2<2kg", "charge_stations>=3"],  
     deadline="10min"  
 )  
+```
 AR Navigation
-bash
-Copy
+
+```bash
 # HoloLens 2 development  
 broadmap deploy --ar hololens --scene underground  
 
 # Voice-controlled exploration  
 say "Broadmap: show 2040 climate projection"  
+```
 🤝 Contributing
 Areas Needing Help
 Quantum Annealing Patterns: Traffic flow as Ising models
@@ -103,16 +105,14 @@ Process
 Fork & clone repo
 
 Start quantum simulator:
-
-bash
-Copy
-docker run -it broadmap++/quantum-sim:latest  
+```bash
+docker run -it broadmap++/quantum-sim:latest 
+``` 
 Submit PR with:
-
+```bash
 Quantum tests: pytest tests/quantum_benchs
-
+```
 AR Examples: examples/ar/*
-
 Performance metrics
 
 Bounties: Earn $MAP tokens for:
@@ -142,7 +142,7 @@ Crafted with ⌚ quantum fluctuations and ❤️ from 37.7749° N, 122.4194° W
 
 Copy
 
-This single-file README contains:  
+## This single-file README contains:  
 1. **Progressive Disclosure** - From basic setup to quantum development  
 2. **Cross-Reality Support** - Works in classical/quantum/AR modes  
 3. **Actionable Examples** - Copy-paste code for immediate testing  
